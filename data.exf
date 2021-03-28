@@ -1,0 +1,97 @@
+# *********************
+# External Forcing Data
+# *********************
+ &EXF_NML_01
+ useExfCheckRange=.FALSE.,
+ exf_iprec         = 64,
+ exf_debugLev      = 3, 
+ &
+
+# *********************
+ &EXF_NML_02
+ hfluxstartdate1   = 20060101,
+ hfluxstartdate2   = 000000,
+ hfluxperiod    = 3600,
+# hs_period       = 3600,
+# hl_period       = 3600,
+
+# hs_startdate1 = 20091212,
+# hs_startdate2 = 000000,
+# hl_startdate1 = 20091212,
+# hl_startdate2 = 000000,
+
+ uwindperiod    = 3600,
+ vwindperiod    = 3600,
+
+ uwindstartdate1 = 20060101,
+ uwindstartdate2 = 000000,
+ vwindstartdate1 = 20060101,
+ vwindstartdate2 = 000000,
+
+# evapperiod     = 3600,
+# precipperiod   = 3600,
+
+# swfluxperiod   = 3600,
+# lwfluxperiod   = 3600,
+
+# evapstartdate1 = 20091212,
+# evapstartdate2 = 000000,
+# precipstartdate1 = 20091212,
+# precipstartdate2 = 000000,
+
+# swfluxstartdate1 = 20091212,
+# swfluxstartdate2 = 000000,
+# lwfluxstartdate1 = 20091212,
+# lwfluxstartdate2 = 000000,
+ 
+ hfluxfile = 'Qnet.bin',
+ uwindfile  = 'u10',
+ vwindfile  = 'v10',
+
+# swfluxfile  = 'swflux',
+# lwfluxfile  = 'lwflux',
+
+# evapfile = 'evap',
+# precipfile='precip',
+
+# hs_file='hs',
+# hl_file='hl',
+
+# tidal forcing 
+# tidePotFile='tidalPot4',
+# tidePotstartdate1 = 20091212,
+# tidePotstartdate2 = 000000,
+# tidePotPeriod = 1800.0,
+# 1 year - not really true
+# tidePotRepCycle = 31536000, 
+ &
+
+# *********************
+ &EXF_NML_03
+ &
+
+# *********************
+# &EXF_NML_04
+# sflux_lon0    = 2.,
+# sflux_lon_inc = 4.,
+# sflux_lat0    = -78.,
+# sflux_lat_inc = 39*4.,
+# sflux_nlon    = 90,
+# sflux_nlat    = 40,
+# &
+#
+# *********************
+ &EXF_NML_OBCS
+ obcsNperiod    = 86400,
+ obcsSperiod    = 86400,
+ obcsEperiod    = 86400,
+ obcsWperiod    = 86400,
+ obcsNstartdate1 = 20060101,
+ obcsNstartdate2 = 000000,
+ obcsSstartdate1 = 20060101,
+ obcsSstartdate2 = 000000,
+ obcsEstartdate1 = 20060101,
+ obcsEstartdate2 = 000000,
+ obcsWstartdate1 = 20060101,
+ obcsWstartdate2 = 000000,
+ &
