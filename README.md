@@ -2,4 +2,4 @@
 
 Jemima Rama, Callum J. Shakespeare and Andrew McC. Hogg
 
-This repository contains the model (MITgcm) configurations files used for the study
+This repository contains the model (MITgcm) configuration files used for the study
